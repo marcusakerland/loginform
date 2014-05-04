@@ -1,0 +1,26 @@
+
+<?php 
+    
+$userLogin = '"id=' . $id . '"';
+$userLogin .= ' user="' . $username . '"';
+$userLogin .= ' name="data[]"';
+?>
+
+<?php 
+    
+$userPass = '"pw=' . $pw . '"';
+$userPass .= ' pass="' . $password . '"';
+$userPass .= ' pass="data[]"';
+?>
+
+<?php 
+	echo "Login:" . "\n";
+?>
+
+<input <?php echo $userLogin; ?> /> 
+
+<?php 
+	echo "Password:" . "\n";
+?>
+
+<input <?php echo $userPass; ?> />
